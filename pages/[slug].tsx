@@ -51,7 +51,7 @@ const useStyles = makeStyles({
   },
 });
 
-const slug = () => {
+const Slug = () => {
     const [blog,setBlog] = useState<any>()
     const router = useRouter()
     const classes = useStyles();
@@ -124,4 +124,4 @@ const slug = () => {
     )
 }
 
-export default slug
+export default Slug
