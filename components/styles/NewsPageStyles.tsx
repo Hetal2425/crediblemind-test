@@ -1,4 +1,4 @@
-  const styles = (theme:any) => ({
+  const styles = () => ({
       MainTitle: {
         marginBottom: "100px",
     

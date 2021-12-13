@@ -8,7 +8,8 @@ import moment from 'moment';
 
 
 function Hit(props:any) {
-    const classes = useStyle(styles);
+  let classes: any | null = useStyle(styles);
+    // const classes = useStyle(styles);
     return (
       <Grid container spacing={1} className={classes.mainSearchPost}>
           <Grid item lg={4} spacing={3}>

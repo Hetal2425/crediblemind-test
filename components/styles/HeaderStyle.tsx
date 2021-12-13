@@ -1,4 +1,4 @@
-const styles = (theme:any) => ({
+const styles = (theme:never) => ({
   headerMain:{
     padding:"30px",
     borderBottom:"1px solid #e3e3e3",

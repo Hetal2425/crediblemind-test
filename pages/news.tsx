@@ -19,10 +19,10 @@ import {
 } from "react-instantsearch-dom";
 
 function News() {
-  const classes = useStyle(styles);
   const [pageData, setpageData] = useState<any>();
   const [threeBlogsData, setThreeBlogsData] = useState<any>();
-
+  let classes: any | null = useStyle(styles);
+  // const classes = useStyle(styles);
   useEffect(() => {
     client
       .getEntries()
