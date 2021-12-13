@@ -3,7 +3,7 @@ import styles  from '../components/styles/NewsPageStyles'
 
 export const useStyles = (commonStyles :any) => {
   return makeStyles((theme) => {
-    return {  ...styles(theme),...commonStyles(theme) };
+    return {  ...styles(),...commonStyles(theme) };
   })();
 };
 
