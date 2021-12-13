@@ -73,8 +73,9 @@ const Slug = () => {
     }, [blogSlug])
     return (
         <Container maxWidth="lg">
-            {blog?.map((data:any) => (
+            {blog?.map((data:any,index:any) => (
              <Grid
+             key={index}
                container
                spacing={1}
                className={classes.mainSearchPost}
