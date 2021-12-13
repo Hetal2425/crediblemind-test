@@ -1,11 +1,12 @@
  import React from 'react'
  import { Container } from '@material-ui/core'
  import styles from './styles/HeaderStyle'
- import useStyles from '../Hooks/useStyle'
+import useStyle from '../Hooks/useStyle'
 
 
  const Header = ({pageData}:any) => {
-    const classes = useStyles(styles);
+    let classes: any | null = useStyle(styles);
+    // const classes = useStyles(styles);
      return (
         <header className={classes.headerMain}>
             <Container fixed>
