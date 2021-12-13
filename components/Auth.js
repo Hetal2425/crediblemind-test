@@ -1,5 +1,5 @@
-import { useSession, signOut } from "next-auth/react"
-import { signIn } from 'next-auth-client'
+import { useSession, signOut,signIn } from "next-auth/react"
+// import { signIn } from 'next-auth/client'
 
 export default function Component() {
   const { data: session } = useSession()

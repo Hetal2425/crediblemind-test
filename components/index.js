@@ -2,11 +2,11 @@
 // import { signIn, signOut, useSession } from 'next-auth/react';
 
 // export default function Home() {
-//   const [session, loadingSession] = useSession();
+// //   const [session, loadingSession] = useSession();
 
-//   if (loadingSession) {
-//     return <p>Loading...</p>;
-//   }
+// //   if (loadingSession) {
+// //     return <p>Loading...</p>;
+// //   }
 
 //   return (
 //     <div >
@@ -16,16 +16,16 @@
 //       </Head>
 
 //       <h1>Google Authentication with NextAuth </h1>
+//       <button  onClick={() => signIn()}>
+//         Sign In
+//       </button>
 
-//       {!session && (
+//       {/* {!session && (
 //         <>
-//           <button  onClick={() => signIn()}>
-//             Sign In
-//           </button>
 //         </>
-//       )}
+//       )} */}
 
-//       {session && (
+//       {/* {session && (
 //         <>
 //           <h4>You are logged as: {session.user.name}</h4>
 //           <div >
@@ -43,7 +43,7 @@
 //             Sign Out
 //           </button>
 //         </>
-//       )}
+//       )} */}
 //     </div>
 //   );
 // }
