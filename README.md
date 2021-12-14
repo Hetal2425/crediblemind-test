@@ -78,3 +78,9 @@ e) Bonus
 - Use `Material UI` for ui styling (overkill for this task but it's important to be familiar with it)
 - Can specify future works if you don't have time for your implementation
 - Good commit history with detailed commit message
+
+# Firebase Authetication for vercel URl
+
+- Step 1: Open Firebase and select crediblemind-test project.
+- Step 2: Select Authentication option from left menu .
+- Step 3: In Authenticaiton page below in  Authorized domains add Vercel Url(https://crediblemind-test-9ufjcdi9y-hetal2425.vercel.app/) for providing firebase authentication.
