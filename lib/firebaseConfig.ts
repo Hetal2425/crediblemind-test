@@ -14,12 +14,12 @@ let app:FirebaseApp;
   appId: "1:856175528326:web:2fac1e7333a8d9b34a0407",
 };
  
-if(getApps().length){
-  app = getApp();
-}
-else{
-  app = initializeApp(firebaseConfig)
-}
+ app = initializeApp(firebaseConfig);
+// if(getApps().length){
+//   app = getApp();
+// }
+// else{
+//   app = initializeApp(firebaseConfig)
+// }
 export default app;
-// const app = initializeApp(firebaseConfig);
 
