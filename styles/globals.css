@@ -86,3 +86,69 @@ form.ais-SearchBox-form input.ais-SearchBox-input {
 .ais-SearchBox-reset{
   display: none;
 }
+
+.main__labelMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+
+.main__labelMain .main__header__bottom .main__border__img {
+  text-align: center;
+  position: relative;
+}
+
+.main__labelMain .main__header__bottom .main__border__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  
+}
+
+.main__labelMain .main__header__bottom .main__border__img button {
+  position: absolute;
+  background-color: #fff;
+  font-size: 16px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #e1e1e1;
+  padding: 14px;
+}
+
+.main__labelMain .main__header__bottom .main__border__img button {
+  position: absolute;
+  background-color: #fff;
+  font-size: 16px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #e1e1e1;
+  padding: 14px;
+  top: 62px;
+  font-weight: bold;
+  color: #a7a7a7;
+}
+
+.main__header__bottom {display: flex;align-items: center;}
+
+.main__header__bottom > div {
+  color: #1e73a6;
+  font-size: 16px !important;
+  width: 100%;
+  max-width: 180px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.icon svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffa900;
+}
+
+.icon svg path {
+  fill: #ffa900;
+}

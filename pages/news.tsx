@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Grid, Card, Container } from "@material-ui/core";
 import { client as alogiraClient } from "../lib/algoliaService";
 import InfiniteHits from "../components/InfiniteHits";
-import  styles  from "../components/styles/NewsPageStyles";
+import styles from "../components/styles/NewsPageStyles";
 import useStyle from "../Hooks/useStyle";
 import {
   InstantSearch,
@@ -22,7 +22,7 @@ function News() {
   const [pageData, setpageData] = useState<any>();
   const [threeBlogsData, setThreeBlogsData] = useState<any>();
   let classes: any | null = useStyle(styles);
-  // const classes = useStyle(styles);
+
   useEffect(() => {
     client
       .getEntries()
@@ -39,7 +39,9 @@ function News() {
   }, []);
 
   const Stats = ({ nbHits }: any) => (
-    <h5 className={`${'mainTitle'} ${classes.mainTitleSearch}`} >{nbHits} Resources Found</h5>
+    <h5 className={`${"mainTitle"} ${classes.mainTitleSearch}`}>
+      {nbHits} Resources Found
+    </h5>
   );
   const CustomStats = connectStats(Stats);
   return (
@@ -122,7 +124,7 @@ function News() {
                     </div>
                   </Card>
                 </Grid>
-                 <Grid container item lg={9} spacing={3}>
+                <Grid container item lg={9} spacing={3}>
                   <div className={classes.SearchList}>
                     <CustomStats />
                     <div className="right-panel">

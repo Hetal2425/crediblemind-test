@@ -11,6 +11,10 @@ LabelMain:{
     "padding":"20px 0 0" ,
     "color":"#696969",
     "fontSize":"25px",
-}
+},
+ButtonDiv:{
+ 
+},
+
 });
 export default styles
