@@ -56,7 +56,6 @@ const Slug = () => {
     const router = useRouter()
     const classes = useStyles();
   const blogSlug = router.asPath.slice(1)
-
   console.log("pid => ",blogSlug);
   
     useEffect(() => {

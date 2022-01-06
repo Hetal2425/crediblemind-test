@@ -3,13 +3,14 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import {theme} from '../theme';
 import type { AppProps } from 'next/app'
 import { AuthProvider } from '../context/auth';
+import News from './news';
 
 function myApp({ Component, pageProps:{ session, ...pageProps } }: AppProps) {
   return (
     <ThemeProvider theme={theme}>   
-      <AuthProvider>
+      {/* <AuthProvider> */}
       <Component {...pageProps} />
-      </AuthProvider>
+      {/* </AuthProvider> */}
      
     </ThemeProvider>)
 }

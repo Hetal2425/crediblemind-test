@@ -2,13 +2,17 @@ import { useAuth } from "../context/auth";
 import useStyle from "../Hooks/useStyle";
 import styles from "../components/styles/indexStyle";
 import { Container } from "@material-ui/core";
+import News from './news'
 
 const Home = () => {
   const { login } = useAuth();
   let classes: any | null = useStyle(styles);
   return (
-    <div className={classes.MainDiv}>
-      <Container fixed>
+    <>
+    <News/>
+    </>
+    // <div className={classes.MainDiv}>
+      /* <Container fixed>
         <div className={classes.MainCard}>
           <div className={classes.logoMain}>
             <img
@@ -33,8 +37,8 @@ const Home = () => {
             </button>
           </div>
         </div>
-      </Container>
-    </div>
+      </Container> */
+    // </div>
   );
 };
 export default Home;
